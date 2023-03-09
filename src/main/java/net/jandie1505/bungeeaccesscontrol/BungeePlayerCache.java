@@ -19,6 +19,10 @@ public class BungeePlayerCache extends Plugin {
         this.configManager = new ConfigManager(this, DefaultConfigValues.getConfig(), "config.json");
     }
 
+    public ConfigManager getConfigManager() {
+        return this.configManager;
+    }
+
     public static BungeePlayerCache getPlugin() {
         return plugin;
     }
